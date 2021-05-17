@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Filter</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1>CSS Filter & Backdrop-Filter</h1>
+      </div>
+      <div class="background">
+        <section class="blurs-wrap">
+          <div class="blur b-1">backdrop-filter: blur(20px)</div>
+          <div class="blur b-2">filter: blur(6px)</div>
+          <div class="blur b-3">opacity: 0.7</div>
+          <div class="blur b-4">backdrop-filter: invert(1);</div>
+        </section>
+      </div>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img
+            id="original"
+            src="https://images.unsplash.com/photo-1616604745302-60a195c7061a?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDQzMXw2c01WalRMU2tlUXx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop"
+            alt=""
+          />
+          <p>Original</p>
+        </div>
+        <div class="gallery-item">
+          <img
+            id="blur"
+            src="https://images.unsplash.com/photo-1616604745302-60a195c7061a?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDQzMXw2c01WalRMU2tlUXx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop"
+            alt=""
+          />
+          <p>filter: blur(0.2rem);</p>
+        </div>
+
+        <div class="gallery-item">
+          <img
+            id="opacity"
+            src="https://images.unsplash.com/photo-1616604745302-60a195c7061a?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDQzMXw2c01WalRMU2tlUXx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop"
+            alt=""
+          />
+          <p>filter: opacity(0.6);</p>
+        </div>
+        <div class="gallery-item">
+          <img
+            id="grayscale"
+            src="https://images.unsplash.com/photo-1616604745302-60a195c7061a?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDQzMXw2c01WalRMU2tlUXx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop"
+            alt=""
+          />
+          <p>filter: grayscale(0.8);</p>
+        </div>
+
+        <div class="gallery-item">
+          <img
+            id="sepia"
+            src="https://images.unsplash.com/photo-1616604745302-60a195c7061a?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDQzMXw2c01WalRMU2tlUXx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop"
+            alt=""
+          />
+          <p>filter:sepia(0.9)</p>
+          <!-- &w=500&q=60 -->
+        </div>
+        <div class="gallery-item">
+          <img
+            id="saturate"
+            src="https://images.unsplash.com/photo-1616604745302-60a195c7061a?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDQzMXw2c01WalRMU2tlUXx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop"
+            alt=""
+          />
+          <p>filter: saturate(300%);</p>
+        </div>
+
+        <div class="gallery-item">
+          <img
+            id="invert"
+            src="https://images.unsplash.com/photo-1616604745302-60a195c7061a?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDQzMXw2c01WalRMU2tlUXx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop"
+            alt=""
+          />
+          <p>filter: invert(2);</p>
+          <!-- &w=500&q=60 -->
+        </div>
+        <div class="gallery-item">
+          <img
+            id="contrast"
+            src="https://images.unsplash.com/photo-1616604745302-60a195c7061a?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDQzMXw2c01WalRMU2tlUXx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop"
+            alt=""
+          />
+          <p>filter: contrast(150%);</p>
+        </div>
+        <div class="gallery-item">
+          <img
+            id="bright"
+            src="https://images.unsplash.com/photo-1616604745302-60a195c7061a?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDQzMXw2c01WalRMU2tlUXx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop"
+            alt=""
+          />
+          <p>filter: brightness(200%);</p>
+          <!-- &w=500&q=60 -->
+        </div>
+        <div class="gallery-item">
+          <img
+            id="hue"
+            src="https://images.unsplash.com/photo-1616604745302-60a195c7061a?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDQzMXw2c01WalRMU2tlUXx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop"
+            alt=""
+          />
+          <p>filter: hue-rotate(90deg);</p>
+        </div>
+        <div class="gallery-item">
+          <img
+            id="shadow"
+            src="https://images.unsplash.com/photo-1616604745302-60a195c7061a?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDQzMXw2c01WalRMU2tlUXx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop"
+            alt=""
+          />
+          <p>box-shadow: 0 0 10px 1px yellow;</p>
+          <!-- &w=500&q=60 -->
+        </div>
+        <div class="gallery-item">
+          <img
+            id="hue-1"
+            src="https://images.unsplash.com/photo-1616604745302-60a195c7061a?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDQzMXw2c01WalRMU2tlUXx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop"
+            alt=""
+          />
+          <p>filter: hue-rotate(180deg);</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
